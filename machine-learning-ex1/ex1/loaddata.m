@@ -5,3 +5,5 @@ m = length(y);
 alpha = 0.01;
 num_iters = 400;
 theta = zeros(3, 1);
+[X mu sigma] = featureNormalize(X);
+X = [ones(m, 1) X];
