@@ -1,7 +1,7 @@
-data = load('ex1data1.txt');
-X = data(:, 1); y = data(:, 2);
-m = length(y); % number of training examples
-X = [ones(m, 1), data(:,1)]; % Add a column of ones to x
-theta = zeros(2, 1); % initialize fitting parameters
-iterations = 1500;
+data = load('ex1data2.txt');
+X = data(:, 1:2);
+y = data(:, 3);
+m = length(y);
 alpha = 0.01;
+num_iters = 400;
+theta = zeros(3, 1);
